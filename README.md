@@ -6,7 +6,7 @@ This paper will be published in the Journal of Applied Intelligence in 2021.
 
 Thanks to iFlytek processing platform for its help in data set processing. The platform link is as follows:[(link)](https://www.xfyun.cn/) 
 
-##Prepare vocab embedding
+## Prepare vocab embedding
 
 To generate vocab embedding and word list(include entity, pos... label), run:
 
