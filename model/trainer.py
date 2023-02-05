@@ -60,7 +60,7 @@ def unpack_batch(batch, cuda):
     subj_pos = batch[6]
     obj_pos = batch[7]
     lens = batch[1].eq(0).long().sum(1).squeeze() #sum(1)按行求和
-    #data中每条数据POS标签对应的PAD_TOKEN：0的数目。[3,5,7,8,..,12]
+    # lens中通过mask的值为1/0确定句长
     return inputs, labels, tokens, head, subj_pos, obj_pos, lens
 
 class GCNTrainer(Trainer):
