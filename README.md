@@ -6,12 +6,21 @@ This paper will be published in the Journal of Applied Intelligence in 2021.
 
 Thanks to iFlytek processing platform for its help in data set processing. The platform link is as follows:[(link)](https://www.xfyun.cn/) 
 
+##Prepare vocab embedding
+
+To generate vocab embedding and word list(include entity, pos... label), run:
+
+```
+python train.py  prepare_vocab.py
+```
+Generate vocab.pkl and  embedding.npy file
+
 ## Training 
 
 To train a graph convolutional neural network (CA-WGCN) model, run:
 
 ```
-Python train.py
+python train.py
 ```
 Model checkpoints and logs will be saved to `./saved_models/00`.
 

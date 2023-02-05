@@ -20,7 +20,7 @@ def build_embedding(wv_file, vocab, wv_dim):
 
     w2id = {w: i for i, w in enumerate(vocab)}
     with open(wv_file, encoding="utf8") as f:
-        next(f)
+        next(f)  # 返回文件下一行
         for line in f:
             elems = line.split()
             token = ''.join(elems[0:-wv_dim])
